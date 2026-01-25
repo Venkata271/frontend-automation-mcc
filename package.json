@@ -1,0 +1,19 @@
+{
+    "name": "playwright-cucumber-media-tests",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "cucumber-js",
+        "report": "node scripts/generateReport.js",
+        "test:report": "npm test && npm run report"
+    },
+    "dependencies": {
+        "@cucumber/cucumber": "^10.0.0",
+        "@playwright/test": "^1.40.0",
+        "playwright": "^1.40.0",
+        "amphtml-validator": "^1.0.0"
+    },
+    "devDependencies": {
+        "cucumber-html-reporter": "^6.0.0",
+        "saucectl": "^0.197.4"
+    }
+}

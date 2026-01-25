@@ -1,0 +1,13 @@
+node_modules/
+reports/
+stdout
+.env
+.DS_Store
+.idea/
+.vscode/
+coverage/
+npm-debug.log*
+.cache/
+playwright-report/
+dist/
+/.nyc_output/
