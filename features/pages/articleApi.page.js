@@ -1,4 +1,4 @@
-const { expect } = require('@playwright/test');
+import { expect } from '@playwright/test';
 
 class ArticleApiPage {
   constructor(apiContext) {
@@ -24,4 +24,4 @@ class ArticleApiPage {
   }
 }
 
-module.exports = ArticleApiPage;
+export default ArticleApiPage;

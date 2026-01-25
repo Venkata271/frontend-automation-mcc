@@ -1,6 +1,6 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
-const { expect } = require('@playwright/test');
-const AMPMediaArticlePage = require('../pages/amp.page.js');
+import { Given, When, Then } from '@cucumber/cucumber';
+import { expect } from '@playwright/test';
+import AMPMediaArticlePage from '../pages/amp.page.js';
 
 let ampmediaPage;
 
@@ -20,8 +20,8 @@ Then('lead video should be visible in amp', async function () {
 });
 
 Then('there should not be any errors', async function () {
-  const amphtmlValidator = require('amphtml-validator');
-  const validator = await amphtmlValidator.getInstance();
+  const amphtmlValidator = await import('amphtml-validator');
+  const validator = await amphtmlValidator.default.getInstance();
 
   // Prefer the server-side HTML (no runtime-injected i-amphtml attributes)
   let html;

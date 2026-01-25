@@ -1,4 +1,4 @@
-const { Before, After, setDefaultTimeout } = require('@cucumber/cucumber');
+import { Before, After, setDefaultTimeout } from '@cucumber/cucumber';
 
 // Increase Cucumber step timeout to 2 minutes
 setDefaultTimeout(120000);

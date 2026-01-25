@@ -1,5 +1,5 @@
-const { setWorldConstructor } = require('@cucumber/cucumber');
-const { chromium, webkit } = require('playwright');
+import { setWorldConstructor } from '@cucumber/cucumber';
+import { chromium, webkit } from 'playwright';
 class CustomWorld {
 async init() {
 this.browser = await chromium.launch({ headless: true });

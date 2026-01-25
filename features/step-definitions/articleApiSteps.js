@@ -1,6 +1,6 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
-const { request } = require('@playwright/test');
-const ArticleApiPage = require('../pages/articleApi.page.js');
+import { Given, When, Then } from '@cucumber/cucumber';
+import { request } from '@playwright/test';
+import ArticleApiPage from '../pages/articleApi.page.js';
 
 let apiContext;
 let articleApiPage;
