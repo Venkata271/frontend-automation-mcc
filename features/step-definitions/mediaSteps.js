@@ -1,6 +1,6 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
-const { expect } = require('@playwright/test');
-const MediaArticlePage = require('../pages/mediaArticle.page.js');
+import { Given, When, Then } from '@cucumber/cucumber';
+import { expect } from '@playwright/test';
+import MediaArticlePage from '../pages/mediaArticle.page.js';
 let mediaPage;
 /* -------- Lead Video -------- */
 Given('user opens a lead video article', async function () {
