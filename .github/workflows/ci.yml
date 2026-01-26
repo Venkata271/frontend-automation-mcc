@@ -41,3 +41,6 @@ jobs:
             reports
             stdout
             playwright-report
+      - name: Run tests in headed mode
+        run: |
+          xvfb-run --auto-servernum npx playwright test --headed
