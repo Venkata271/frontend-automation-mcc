@@ -1,4 +1,4 @@
-true { setWorldConstructor } from '@cucumber/cucumber';
+import { setWorldConstructor } from '@cucumber/cucumber';
 import { chromium, webkit } from 'playwright';
 class CustomWorld {
 async init() {
