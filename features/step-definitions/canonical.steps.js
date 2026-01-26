@@ -27,6 +27,6 @@ Then(
 
     console.log('canonical url is displayed');
 
-    await publicationPage.takeScreenshot('canonical-url-validation');
+
   }
 );

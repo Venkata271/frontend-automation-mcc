@@ -26,12 +26,7 @@ class PublicationPage {
     return this.page.url();
   }
 
-  async takeScreenshot(name) {
-    await this.page.screenshot({
-      path: `screenshots/${name}.png`,
-      fullPage: true,
-    });
-  }
+
 }
 
 export { PublicationPage };
