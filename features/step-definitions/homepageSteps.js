@@ -17,5 +17,9 @@ Then(
     for (const componentName of components) {
       await homePage.verifyComponentInViewport(componentName);
     }
+    await this.page.screenshot({
+      path: 'screenshots/homepage-components.png',
+      fullPage: true
+    });
   }
 );
